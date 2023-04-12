@@ -1,3 +1,7 @@
+
+body {
+    padding-bottom: 150px;
+}
 /*-----------FONTS----------------*/
 
 p {
@@ -39,24 +43,40 @@ header ul {
 }
 
 
-header ul li{
+.desktop-nav ul li {
     margin-left: 24;
     margin-right: 24px;
     padding: 0;
     list-style-type: none;
-    text-decoration: none;
-   /* display: inline;*/
+    
     display: none;
-
 }
+
+.desktop-nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
 header a:hover{
     font-weight: 700;
 }
 
-header ul li a {
+.drop-down ul li a {
     text-decoration: none;
     color: black;
+    
+    right: 0;
+    top: 10px;
 }
+.drop-down ul li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.drop-down {
+    display: none;
+}
+
 .hamburger {
     display: block;
     position: absolute;
@@ -64,12 +84,17 @@ header ul li a {
     top: 10px;
 }
 
+.show {display:block;}
+
 @media(min-width:800px) {
-    header ul li{
+    .desktop-nav ul li{
         display: inline;
     }
     .hamburger{
     display: none;
+    }
+    .drop-down ul li {
+        display: none;
     }
 }
 
