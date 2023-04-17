@@ -1,6 +1,6 @@
 
 body {
-    padding-bottom: 150px;
+    
 }
 /*-----------FONTS----------------*/
 
@@ -43,18 +43,19 @@ header ul {
 }
 
 
+
 .desktop-nav ul li {
     margin-left: 24;
     margin-right: 24px;
     padding: 0;
     list-style-type: none;
-    
     display: none;
 }
 
 .desktop-nav ul li a {
     text-decoration: none;
     color: black;
+
 }
 
 header a:hover{
@@ -73,8 +74,19 @@ header a:hover{
     text-decoration: none;
 }
 
-.drop-down {
-    display: none;
+.drop-down.testing {
+    border: 2px solid red;
+
+}
+
+.dropdown {
+    border: 2px solid red;
+}
+
+.button {
+    border: 2px solid white;
+    background: white;
+
 }
 
 .hamburger {
@@ -90,10 +102,13 @@ header a:hover{
     .desktop-nav ul li{
         display: inline;
     }
-    .hamburger{
+    #menu{
     display: none;
     }
-    .drop-down ul li {
+    .close-menu{
+        display:none;
+    }
+    .drop-down ul li a{
         display: none;
     }
 }
@@ -134,12 +149,14 @@ header a:hover{
 }
 
 
-.hero-image button {
+.hero-image a {
     background-color: white;
     border-radius: 25px;
     text-decoration: none;
     border: 1px solid black;
     padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
 }
 
 /*------------ABOUT ME PAGE------------*/
@@ -158,11 +175,10 @@ header a:hover{
 
 .aboutme div {
     align-items: flex-start;
-    justify
 }
 
 .aboutme p {
-    width: 50 vw;
+    width: 50vw;
     padding-bottom: 24px;
 }
 
@@ -258,8 +274,7 @@ header a:hover{
         max-width: 1500px;
     }
 }
-.wa-dol-container {
-}
+
 
 .wa-dol {
   width: 100%;
@@ -285,7 +300,6 @@ header a:hover{
 /*------------FOOTER SECTION------------*/
 footer {
     background: black;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;

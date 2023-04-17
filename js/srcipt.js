@@ -1,3 +1,4 @@
-function myFunction() {
-    document.getElementByClassName("drop-down").classList.toggle("show");
-  }
+$('#menu').addClass('drop-down');
+$('#menu').click(function(){
+    this.addClass('testing');
+});

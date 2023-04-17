@@ -28,9 +28,8 @@
                  </ul>
             </div>
                  <!--HAMBURGER MENU IMAGE AND DROPDOWN-->
-            <div class="hamburger">
-                <img src="images/list.svg"  onclick="myFunction()" alt="hamburger menu item">
-                <div class= "drop-down">
+            <button id="menu" type="button"> <img src="images/list.svg" alt="hamburger menu"></button>
+                <div class="drop-down">
                     <ul>
                         <li>                             
                             <a href="index.html">Home</a>
@@ -42,7 +41,9 @@
                             <a href="work.html">Work</a>
                         </li>
                      </ul>
-                </div>
+                     </div>
+            <div class="close-menu">
+                <img src="images/x-lg.svg" alt="close menu">
             </div>
            
             </nav> 
@@ -55,11 +56,33 @@
             </div>
             <div>
                 <h1>I'm Cleo, a UX Researcher and Designer based in Portland, Oregon.</h1>
-                <a href="about.html">
-                <button>About Me</button>
-                </a>
+                <a href="about.html">About Me</a>
             </div>    
         </section>
+
+         <!--PROJECTS SECTION-->
+         <div class="work-section">
+            <div class="poi-dog-container">
+                <div class="poi-dog">
+                    <div>
+                        <h1>Poi Dog Rescue</h1>
+                    </div>
+                    <div>
+                        <a href=""> <img src="images/poi-dog-mockup.png" alt="screenshot of mobile and desktop redesign"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="wa-dol-container">
+                <div class="wa-dol">
+                    <div>
+                        <h1>Washington Licensing Department</h1>
+                    </div>
+                    <div>
+                        <a href=""> <img src="images/wa-dol-mockup.png" alt="screenshot of mobile and desktop redesign"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--FOOTER SECTION-->
         <footer>
@@ -71,6 +94,7 @@
             <h2>cleo6991@gmail.com | 646-696-1096</h2>
             <p>Copyright 2022</p>
         </footer>
+        <script src="js/jquery.js"></script>
         <script src="js/srcipt.js"></script>
     </body>
 </html>        
