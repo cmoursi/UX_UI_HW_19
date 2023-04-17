@@ -74,7 +74,7 @@ header a:hover{
     text-decoration: none;
 }
 
-.drop-down.testing {
+.testing {
     border: 2px solid red;
 
 }
@@ -83,18 +83,30 @@ header a:hover{
     border: 2px solid red;
 }
 
-.button {
+#menu {
     border: 2px solid white;
     background: white;
+    padding: 24px;
 
 }
+
 
 .hamburger {
     display: block;
-    position: absolute;
-    right: -100px;
+    right: 80vw;
     top: 10px;
 }
+
+.close-menu {
+    display: block;
+    right: 80vw;
+    top: 10px; 
+    border: 2px solid white;
+    background: white;
+    padding: 24px;
+}
+
+
 
 .show {display:block;}
 
@@ -141,7 +153,7 @@ header a:hover{
 
 .hero-image h1 {
     padding: 0px;
-    width: 100%;
+    width: 100vw;
 }
 
 .hero-image div {
@@ -253,9 +265,10 @@ header a:hover{
 
 .poi-dog-container {
     background: wheat;
+    width: 100vw;
 }
 .poi-dog {
-    width: 100%;
+    width: 100vw;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -268,10 +281,17 @@ header a:hover{
     height: auto;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 800px) {
     .poi-dog {
         flex-direction: row-reverse;
-        max-width: 1500px;
+        max-width: 1100px;
+        width: 100vw;
+    }
+}
+
+@media(min-width:1100px) {
+    .poi-dog-container{
+        width: 1000px;
     }
 }
 
