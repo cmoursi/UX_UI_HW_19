@@ -129,7 +129,7 @@ header a:hover{
 /*------------HOME PAGE HERO SECTION----------------*/
 
 .hero-image {
-    width: calc(100 vw);
+    width: calc(100vw);
     height: auto;
     padding: 25px 0px 25px 0px;
     display: flex;
@@ -141,7 +141,11 @@ header a:hover{
 @media(min-width:800px) {
     .hero-image {
         flex-direction: row;
-        width: 100 vw;
+        width: calc(100vw);
+    }
+    .hero-image h1 {
+        padding: 0px;
+        width: calc(100vw);
     }
 }
 
@@ -265,7 +269,7 @@ header a:hover{
 
 .poi-dog-container {
     background: wheat;
-    width: 100vw;
+    width: 100%;
 }
 .poi-dog {
     width: 100vw;
@@ -285,13 +289,13 @@ header a:hover{
     .poi-dog {
         flex-direction: row-reverse;
         max-width: 1100px;
-        width: 100vw;
+        width: 100%;
     }
 }
 
 @media(min-width:1100px) {
     .poi-dog-container{
-        width: 1000px;
+        width: 100%;
     }
 }
 
@@ -305,7 +309,7 @@ header a:hover{
   padding: 24px;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 800px) {
     .wa-dol {
         flex-direction: row;
         max-width: 1500px;
